@@ -16,10 +16,6 @@ const ReturnContent = ()=>{
     // plainTextPositions
     return(
         <div>
-            {htmlcontent}
-            <br />
-            <br />
-            <br />
             <HighlightHTMLContent htmlContent={htmlcontent} plainText={plaintext} plainTextPositions={plainTextPositions} />
         </div>
     )

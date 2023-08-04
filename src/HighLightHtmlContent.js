@@ -12,7 +12,7 @@ function highlightHTMLContent({htmlContent, plainText, plainTextPositions}) {
   
     for (const position of plainTextPositions) {
       const textToHighlight = plainText.substring(position.start, position.end+1);
-      const highlightedText = `<mark>${textToHighlight}</mark>`;
+      const highlightedText = `<mark>${textToHighlight}</mark>`;  // marked the text
 
       highlightedContent = highlightedContent.replace(textToHighlight, highlightedText);
     }

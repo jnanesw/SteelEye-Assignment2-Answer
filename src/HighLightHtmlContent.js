@@ -14,7 +14,7 @@ function highlightHTMLContent({htmlContent, plainText, plainTextPositions}) {
       const textToHighlight = plainText.substring(position.start, position.end+1);
       const highlightedText = `<mark>${textToHighlight}</mark>`;
 
-      highlightedContent = highlightedContent.replace(textToHighlight,plainText.substring(position.start, position.start)+ highlightedText);
+      highlightedContent = highlightedContent.replace(textToHighlight, highlightedText);
     }
   
     return highlightedContent;
